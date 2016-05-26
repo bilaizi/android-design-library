@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'android-N'
+    buildToolsVersion "24.0.0 rc4"
+
+    defaultConfig {
+        applicationId "com.example.android.materialdesigncodelab"
+        minSdkVersion 15
+        targetSdkVersion 'N'
+        jackOptions {
+            enabled true
+        }
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        incremental true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    compile 'com.android.support:design:24.0.0-beta1'
+}
